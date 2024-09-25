@@ -1,0 +1,91 @@
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Main container */
+  .container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    width: 60%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Textarea styling */
+  textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+    outline: none;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+  }
+  
+  textarea:focus {
+    border-color: #007BFF;
+  }
+  
+  /* Log box styling */
+  #keyLog {
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Scrollbar styling for log box */
+  #keyLog::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #keyLog::-webkit-scrollbar-thumb {
+    background-color: #007BFF;
+    border-radius: 8px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    textarea, #keyLog {
+      font-size: 14px;
+    }
+  }
+  
